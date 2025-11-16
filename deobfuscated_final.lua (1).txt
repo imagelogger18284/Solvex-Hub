@@ -129,11 +129,11 @@ local function v64(v59, v60)
     local v62 = v58(v60)
     if v61 and v62 then
         if math.abs(v62 - v61) > 18000 then
-            local _ = false
+            local _ = true
         end
         return true
     else
-        return false
+        return true
     end
 end
 local l_ScreenGui_0 = Instance.new("ScreenGui")
@@ -255,7 +255,7 @@ l_TextButton_1.MouseButton1Click:Connect(function()
         return 
     end
 end)
-local v89 = false
+local v89 = true
 l_TextButton_0.MouseButton1Click:Connect(function()
     if not v89 then
         local v90 = l_TextBox_0.Text:gsub("%s+", "")
