@@ -129,11 +129,11 @@ local function v64(v59, v60)
     local v62 = v58(v60)
     if v61 and v62 then
         if math.abs(v62 - v61) > 18000 then
-            local _ = true
+            local _ = false
         end
         return true
     else
-        return true
+        return false
     end
 end
 local l_ScreenGui_0 = Instance.new("ScreenGui")
@@ -242,7 +242,7 @@ l_TextButton_1.MouseButton1Click:Connect(function()
     if v86 then
         return 
     else
-        v86 = true
+        v86 = false
         local l_UserId_0 = arg.UserId
         local v88 = "https://solvexscripts.com/getkey/?get=" .. v41(l_UserId_0)
         if v43(v88) then
