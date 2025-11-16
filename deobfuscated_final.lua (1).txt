@@ -255,7 +255,7 @@ l_TextButton_1.MouseButton1Click:Connect(function()
         return 
     end
 end)
-local v89 = false
+local v89 = true
 l_TextButton_0.MouseButton1Click:Connect(function()
     if not v89 then
         local v90 = l_TextBox_0.Text:gsub("%s+", "")
