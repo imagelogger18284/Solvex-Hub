@@ -242,7 +242,7 @@ l_TextButton_1.MouseButton1Click:Connect(function()
     if v86 then
         return 
     else
-        v86 = false
+        v86 = true
         local l_UserId_0 = arg.UserId
         local v88 = "https://solvexscripts.com/getkey/?get=" .. v41(l_UserId_0)
         if v43(v88) then
@@ -255,7 +255,7 @@ l_TextButton_1.MouseButton1Click:Connect(function()
         return 
     end
 end)
-local v89 = true
+local v89 = false
 l_TextButton_0.MouseButton1Click:Connect(function()
     if not v89 then
         local v90 = l_TextBox_0.Text:gsub("%s+", "")
